@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-function CalButton ({ buttonText, spanningRow, spanningCol, btColor }){
+function CalButton ({ buttonText, spanningRow, spanningCol, btColor, onClick, operator }){
   const buttonStyle = {
     gridColumn: spanningCol,
     gridRow: spanningRow,
@@ -10,7 +10,7 @@ function CalButton ({ buttonText, spanningRow, spanningCol, btColor }){
   };
 
   return (
-    <button style={buttonStyle}>
+    <button style={buttonStyle}  onClick={() => onClick(buttonText)}>
       {buttonText}
     </button>
   );

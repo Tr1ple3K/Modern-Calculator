@@ -2,13 +2,13 @@
 
 import React from 'react';
 
-function Screen () {
+function Screen ({ value }) {
  
   return (
     <div>
         {/* screen section */}
         <div className='screen-container'>
-            <input type="text" value="0" className="screenStyle"/>
+            <input type="text" value={value} readOnly className="screenStyle"/>
         </div>
     </div>
   );
