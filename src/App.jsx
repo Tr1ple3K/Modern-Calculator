@@ -204,14 +204,7 @@ export default function Calculator() {
   }
 
   
-  
-
-  
-
   return (
-    
-    
-
     <div>
       
       <motion.h1
